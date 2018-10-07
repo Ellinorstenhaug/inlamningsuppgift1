@@ -4,7 +4,7 @@ x = 4; // Assign
 console.log(x);
 
 // Originallista
-//let originalLista = ["vallmo", "dahlia", "lavendel", "prästkrage"];
+let originalLista = ["vallmo", "dahlia", "lavendel", "prästkrage"];
 
 // Testar isArray. 
 let lista = ["vallmo", "dahlia", "lavendel", "prästkrage"];
@@ -39,3 +39,19 @@ document.getElementById("toStringNoAdd2").innerHTML = typeof(osorterad.toString(
 
 // Testar copyWithin()
 document.getElementById("copyIndex").innerHTML = lista.copyWithin(2, 0);
+
+//Testar fill()
+let latin = document.getElementById("fillStaticValue").innerHTML = lista.fill("Euphorbia pulcherrima");
+
+//Testar includes()
+document.getElementById("includedElement").innerHTML = originalLista.includes("vallmo", 0);
+
+//Testar lastIndexOf()
+document.getElementById("returnLastIndex").innerHTML = originalLista.lastIndexOf("dahlia");
+
+//Testar push()
+document.getElementById("addElementLast").innerHTML = originalLista.push("Julstjärna", "Novemberkaktus");
+console.log(originalLista);
+
+//Testar slice()
+document.getElementById("slicedElements").innerHTML = originalLista.slice(2, 4);
