@@ -10,44 +10,58 @@ JavaScript 1 – Inlämningsuppgift 1
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-
-
 <body>
     <h1>Del 1</h1>
     <h3>1. På Wikipedia står det… (<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wiki-länk</a>)
         ” JavaScript often abbreviated as JS, is a high-level, interpreted programming language”
         Vad innebär denna definition, förklara?
-        Tips: <a href="https://medium.com/@bvipul/javascript-interpreted-or-compiled-eeb1403fe814" target="_blank">JavaScript: Interpreted or Compiled?</a>
-        </h3>
-        <p>Svar: När man pratar om high-level språk så innebär det att man talar om <i>vad</i> man      ska göra 
-            inte <i>hur</i>. Motsatsen är low-level språk och då är man nere på maskinkodning eller
-            assembling som det heter (där man berättar hur det ska utföras av datorns processor).
-            För att ta ett exempel kan man säga att high-level är som att gå på restaurang,
-            man säger <i>vad</i> man vill äta så får man maten serverad, medans low-level 
-            är att gå in och laga maten själv. Dvs man talar om <i>hur</i> man ska hacka grönsakerna, hur många grader ungen ska vara på eller hur mycket salt och peppar man ska ha. 
-            <br><br>
-            I low-level språk går man in och detaljstyr i större utsträckning än i high-level språk.
-            Man säger att high-levelspråk har en hög abstraktionsnivå. Det innebär att man har "tagit bort" svårbegripliga binärfunktionerna i tex maskinkod och landat i ett språk som enklare kan beskrivas i ord och enklare instruktioner. 
-        </p>
+        Tips: <a href="https://medium.com/@bvipul/javascript-interpreted-or-compiled-eeb1403fe814" target="_blank">JavaScript:
+            Interpreted or Compiled?</a>
+    </h3>
+    <p>Svar: När man pratar om high-level språk så innebär det att man talar om <i>vad</i> man ska göra
+        inte <i>hur</i>. Motsatsen är low-level språk och då är man nere på maskinkodning eller
+        assembling som det heter (där man berättar hur det ska utföras av datorns processor).
+        För att ta ett exempel kan man säga att high-level är som att gå på restaurang,
+        man säger <i>vad</i> man vill äta så får man maten serverad, medans low-level
+        är att gå in och laga maten själv. Dvs man talar om <i>hur</i> man ska hacka grönsakerna, hur många grader
+        ungen ska vara på eller hur mycket salt och peppar man ska ha.
+        <br><br>
+        I low-level språk går man in och detaljstyr i större utsträckning än i high-level språk.
+        Man säger att high-levelspråk har en hög abstraktionsnivå. Det innebär att man har "tagit bort" svårbegripliga
+        binärfunktionerna i tex maskinkod och landat i ett språk som enklare kan beskrivas i ord och enklare
+        instruktioner.
+    </p>
 
     <h3>2. JavaScript använder ”dynamisk typning” (dynamic typing)
         Vad innebär det? Förklara och skriv några exempel.
-        Tips: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Dynamic typing</a>
-        </h3>
-        <p>Svar: I ett dynamiskt språk som i det här fallet, Javascript, så kan variabler ändra värde. Alltså att man kan tilldela tex variabel x först ett nummer och sedan tilldela den ett nytt värde tex string. Då kommer det få det senaste värdet som man har tilldelat x. Javascript är ett språk där variablerna inte har ett värde av en specifik datatyp (ex Number, Boolean, String, Undefined, Null) utan kan anta alla olika datatyper utan att Javascript klagar. 
-        </p>
+        Tips: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Dynamic
+            typing</a>
+    </h3>
+    <p>Svar: I ett dynamiskt språk som i det här fallet, Javascript, så kan variabler ändra värde. Alltså att man kan
+        tilldela tex variabel x först ett nummer och sedan tilldela den ett nytt värde tex string. Då kommer det få det
+        senaste värdet som man har tilldelat x. Javascript är ett språk där variablerna inte har ett värde av en
+        specifik datatyp (ex Number, Boolean, String, Undefined, Null) utan kan anta alla olika datatyper utan att
+        Javascript klagar.
+    </p>
 
     <h3>3. Vad är console.log() och vad kan det användas till?
         Beskriv två andra användbara metoder som finns i console-objektet
         Tips: <a href="https://www.w3schools.com/jsref/obj_console.asp" target="_blank">The Console Object</a><br></h3>
-        <p>Svar: Console är ungefär som en tolk som hjälper programmeraren att se vad som händer när man kör kod, så att allt fungerar som det var tänkt. Console är där den exekverade koden visas, till exempel går det att använda webbläsaren som en console/tolk (i Chrome kan man trycka ALT + CMD + j). För Mac-användare heter tolken Terminal, för windows kallas den vanligaste Bash eller Powershell. Man kan även ladda ned plugins som till exempel Hyper. <br><br> 
-        Metoden som gör att man kan se kod på Console/Kommandotolken heter log(). Man skriver därför console.log(). Det man vill att console ska skriva ut står mellan parenteserna.<br><br>
-        Till exempel kan man skriva;<br> number - console.log(1234) <br> string - console.log("a,b,c") <br> eller deklarerade variabler -  console.log(firstName)
-        </p>
+    <p>Svar: Console är ungefär som en tolk som hjälper programmeraren att se vad som händer när man kör kod, så att
+        allt fungerar som det var tänkt. Console är där den exekverade koden visas, till exempel går det att använda
+        webbläsaren som en console/tolk (i Chrome kan man trycka ALT + CMD + j). För Mac-användare heter tolken
+        Terminal, för windows kallas den vanligaste Bash eller Powershell. Man kan även ladda ned plugins som till
+        exempel Hyper. <br><br>
+        Metoden som gör att man kan se kod på Console/Kommandotolken heter log(). Man skriver därför console.log(). Det
+        man vill att console ska skriva ut står mellan parenteserna.<br><br>
+        Till exempel kan man skriva;<br> number - console.log(1234) <br> string - console.log("a,b,c") <br> eller
+        deklarerade variabler - console.log(firstName)
+    </p>
 
     <h3>4. För variabler används begreppen deklarera (declare) och tilldela (assign).
         Vad innebär dessa?</h3>
-        <p>Svar: Att deklarera (declare) en variabel innebär att man namnger varibeln som man senare kan spara olika värden i. När man har gjort det kan man tilldela (assign) variabeln ett värde. <br><br>
+    <p>Svar: Att deklarera (declare) en variabel innebär att man namnger varibeln som man senare kan spara olika värden
+        i. När man har gjort det kan man tilldela (assign) variabeln ett värde. <br><br>
         Deklaration (declare):<br>
         <b><i>let x;</i></b><br>
         Tilldela värdet 5 i variabeln x (assign):<br>
@@ -56,12 +70,13 @@ JavaScript 1 – Inlämningsuppgift 1
         <b><i>console.log(x);</i></b><br><br>
         Att deklarera och tilldela värde i samma rad:<br>
         <b><i>let x = 5;</i></b>
-        </p>
+    </p>
 
     <h3>5. Vilka av följande variabelnamn är ogiltiga i JavaScript och varför?</h3>
     <ul></ul>
     <li>3D_Printer</li>
-    <p>Oglitlig, variabelnamn får en börja med en siffra. Siffror används för beräkningar. Kompilatorn förstår inte att det är ett variabelnamn och tolkar det som att den vill beräkna något.</p>
+    <p>Oglitlig, variabelnamn får ej börja med en siffra. Siffror används för beräkningar. Kompilatorn förstår inte att
+        det är ett variabelnamn och tolkar det som att den vill beräkna något.</p>
 
     <li>_private</li>
     <p>OK! Variabelnamn får börja med understreck.</p>
@@ -89,77 +104,136 @@ JavaScript 1 – Inlämningsuppgift 1
     </ul>    
 
     <h3>6. Vad innebär null och undefined?</h3>
+    <p> <b>Null:</b> Ett tilldelat värde som är <i>tomt</i> eller<i> non-existing</i>. Ex: let x = null; </p>
+    <p><b>Undefined:</b> När en variabel har blivit deklarerad men inte blivit tilldelad ett värde är den odefinierad,
+        <i>undefined</i>. Exempel: Let x;</p>
 
     <h3>7. Vad är NaN?</h3>
+    <p>Svar: NaN är förkortning för Not a Number, ett värde som indikerar att värder ej är ett nummer. Returneras som
+        värde när matematiska funktioner misslyckas. <br>Exempelvis, det returnerade värdet på 0/0 i JavaScript är NaN.
+    </p>
 
     <h3>8. Vad används semikolon till? Är det obligatoriskt att använda ; i JavaScript?</h3>
-
+    <p>Semikolon används i JavaScript för att separera kommandon.
+        Det är inte obligatoriskt med semikolon i JavaScript, men är det nödvändigt om det körs två kommandon på samma
+        rad. Ex:
+        <br>
+        let x = 0; x++
+        <br> Dock lägger JavaScriptmotorn in semikolon vid exempelvis radbrytningar, vilket gör att följande kod
+        fungerar utan semikolon:
+        <br>let x = 0
+        <br> x++
+    </p>
     <h3>9. Vad är aritmetiska operatorer och hur kan de användas tillsammans med variabler?</h3>
 
     <h3>10. Undersök följande kodsnutt.
-       <span class="subheading"> 
-        <br>let cars = new Array(2);
-        <br>cars[cars.length] = "Volvo";
-        <br>Hur många element rymmer arrayen cars?
-        <br>Vad innehåller arrayen exakt?</span></h3>
+        <span class="subheading">
+            <br>let cars = new Array(2);
+            <br>cars[cars.length] = "Volvo";
+            <br>Hur många element rymmer arrayen cars? </h3>
+    <span>1 element</span>
+    <h3><br>Vad innehåller arrayen exakt?</span></h3>
+    <span>"Volvo"</span>
 
-        
-        <h1>Del 2 – Projektarbete – Användbara Array-metoder i JavaScript</h1>
-        <h3>Gå igenom ”JavaScript Array Reference” på W3Schools.com
-            <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp" target="_blank">JavaScript Array Reference</a><br>
-            Gå igenom följande metoder;</h3>
+    <h1>Del 2 – Projektarbete – Användbara Array-metoder i JavaScript</h1>
+    <h3>Gå igenom ”JavaScript Array Reference” på W3Schools.com
+        <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp" target="_blank">JavaScript Array Reference</a><br>
+        Gå igenom följande metoder;</h3>
 
-            <li>isArray()</li>
-            <p>Denna metod testar om en variabel innehåller en lista. Den retunerar en boolean, antingen true eller false. I detta fall true, det är en lista.</p>
-            <p id="isThisArray">isArray()</p>
+    <li>isArray()</li>
+    <p>Denna metod testar om en variabel innehåller en lista. Den retunerar en boolean, antingen true eller false. I
+        detta fall true, det är en lista.</p>
+    <p id="isThisArray">isArray()</p>
 
-            <li>sort()</li>
-            <p>Sorterar listan efter bokstavsordning. En lista som innehåller nummer sorterar endast tal från 0-9 på korrekt sätt. Man måste använda en funktion om man vill sortera en lista som innehåller nummer större än 10 tex.</p>
-            <p id="whatDoesSortDo">sort()</p>
-            
-            <p>Visar en osorterad nummrerad lista.</p>
-            <p id="sortNumberOsorterad">sort()</p>
+    <li>sort()</li>
+    <p>Sorterar listan efter bokstavsordning. En lista som innehåller nummer sorterar endast tal från 0-9 på korrekt
+        sätt. Man måste använda en funktion om man vill sortera en lista som innehåller nummer större än 10 tex.</p>
+    <p id="whatDoesSortDo">sort()</p>
 
-            <p>Visar en "sorterad" nummrerad lista. sort() hanterar alla listor som strängar, därför fungerar inte numrerade listor över 10. Exempel:</p>
-            <p id="sortNumberSorterad">sort()</p>
+    <p>Visar en osorterad nummrerad lista.</p>
+    <p id="sortNumberOsorterad">sort()</p>
 
-            <li>reverse()</li>
-            <p>Visar en sorterad lista fast baklänges (reverse).</p>
-            <p id="reverseList">reverse()</p>
+    <p>Visar en "sorterad" nummrerad lista. sort() hanterar alla listor som strängar, därför fungerar inte numrerade
+        listor över 10. Exempel:</p>
+    <p id="sortNumberSorterad">sort()</p>
 
-            <li>concat()</li>
-            <p>concat() sätter ihop två arrayer. Exempel:</p>
-            <p id ="konkatineraArrayer">concat()</p>
+    <li>reverse()</li>
+    <p>Visar en sorterad lista fast baklänges (reverse).</p>
+    <p id="reverseList">reverse()</p>
 
-            <li>join()</li>
-            <p>join() tar en lista (array) och gör den till en sträng (string). Skulle man ta isArray efter att man använt metoden join() så skulle den retunera false. join() tillåter att man också skriver in ett specifikt värde mellan varje element, i detta fall en smiley 😎. Exempel:</p>
-            <p id ="joinaToString"></p>
+    <li>concat()</li>
+    <p>concat() sätter ihop två arrayer. Exempel:</p>
+    <p id="konkatineraArrayer">concat()</p>
 
-            <li>toString()</li>
-            <p>toSting() gör ungefär samma sak som join(), dock kan man inte skriva in ett värde mellan varje element. Den sätter automatiskt dit ett komma-tecken. Exempel:</p>
-            <p id ="toStringNoAdd"></p>
-            <p id ="toStringNoAdd2"></p>
+    <li>join()</li>
+    <p>join() tar en lista (array) och gör den till en sträng (string). Skulle man ta isArray efter att man använt
+        metoden join() så skulle den retunera false. join() tillåter att man också skriver in ett specifikt värde
+        mellan varje element, i detta fall en smiley 😎. Exempel:</p>
+    <p id="joinaToString"></p>
 
-            <li>copyWithin()</li>
-            <p>copyWithin() kopierar allt som står fram till index 2, dvs vallmo och prästkrage.  i detta fall index 2 och ersätter platsen med all som står på plats 0-1. Listan såg från börjag ut såhär: vallmo,prästkrage,lavendel,dahlia</p>
-            <p id ="copyIndex"></p>
+    <li>toString()</li>
+    <p>toSting() gör ungefär samma sak som join(), dock kan man inte skriva in ett värde mellan varje element. Den
+        sätter automatiskt dit ett komma-tecken. Exempel:</p>
+    <p id="toStringNoAdd"></p>
+    <p id="toStringNoAdd2"></p>
+
+    <li>copyWithin()</li>
+    <p>I detta exempel kopierar copyWithin(2, 0) allt som står fram till index 2, den första siffran indikerar vart den ska klistra in. Den andra siffran talar om vart den ska kopiera från,dvs från index 0. Listan såg från börjag ut såhär:
+    vallmo,prästkrage,lavendel,dahlia</p>
+    <span id="copyIndex"></span>
+
+    <li>fill()</li>
+
+    <li>from()</li>
+    <p>Metoden from() gör motsatsen till toString(). Den tar en string och gör om den till en Array.</p>
+    <span id="createArray"></span> <br>
+    <span id="createArrayTrue"></span>
+
+    <li>includes()</li>
+    <span id="includeElements"></span>
 
 
-            <li>fill()</li>
-            <li>from()</li>
-            <li>includes()</li>
-            <li>indexOf()</li>
-            <li>lastIndexOf()</li>
-            <li>pop()</li>
-            <li>push()</li>
-            <li>shift()</li>
-            <li>unshift()</li>
-            <li>slice()</li>
-            <li>valueOf()</li> retunerar en primitiv datatyp
-            <h5>Skriv en rapport där du beskriver varje metod med ett exempel.
-                OBS! Skapa dina egna exempel och kopiera inte källkod från W3Schools.</h5>
-            
-                <script src="script-uppgift1.js"></script>
-            </body>
-                </html>
-                
+    <p>Med hjälp av metoden includes() kan man kontrollera ifall en array innehåller ett visst element eller inte. Innehåller arrayen elementet returneras true, om ej returneras false.</p>
+    <p>Ursprunglig array:vallmo,prästkrage,lavendel,dahlia</p>
+
+    <p>Arrayen innehåller dahlia:<span id="includedElement"></span></p>    
+
+
+    <li>indexOf()</li>
+    <p>Metoden indexOf() söker igenom arrayen efter elementet man söker och retunerar indexet som den ligger på. Listan: (vallmo,prästkrage,lavendel,dahlia), Metoden: indexOf("vallmo");</p>
+    <span id="returnIndex"></span>
+    
+    
+    <li>lastIndexOf()</li>
+    <li>pop()</li>
+    <p>Metoden pop() tar bort det sista elementet i listan och retunerar det borttagna elementet. Listan: ("vallmo", "dahlia", "lavendel", "prästkrage")</p>
+    <span id="getRidEnd"></span>
+
+    <li>push()</li>
+    <li>shift()</li>
+    <p>Metoden shift() tar också bort element, men den tar bort det första element i listan. Listan: ("vallmo", "dahlia", "lavendel", "prästkrage")</p>
+    <span id="getRidStart"></span>
+
+    <li>unshift()</li>
+    <p>Metoden unshift() lägger till element i början av en lista. Listan: ("vallmo", "dahlia", "lavendel", "prästkrage"). Retunerar antalet element som får plats i arrayen.</p>
+    <span id="addBeginning"></span>
+    
+
+
+    <li>slice()</li>
+    <li>valueOf()</li> 
+    <p>Metoden valueOf() konverterar arrayen, som är ett objekt, till en primitiv datatyp. I Javascript finns redan den här funktionen automatiskt, den åberopar den rätta datatypen själv där den efterfrågas.
+
+    Man kan ju tycka att valueOf() inte behövs då man har gått igenom ett antal artiklar om detta ämne. Handlar det mer om att ha kontrollen så som i användandet av semikolon? Att man själv kontrollerar vart semikolonen ska vara istället för att Javascript själv sätter ut dem?
+    <br><a href="https://medium.com/@kevincennis/object-object-things-you-didn-t-know-about-valueof-38f2a88dfb33" target="_blank">Länk</a>
+    </p>
+    <span id="addBeginning"></span>
+    
+    retunerar en primitiv datatyp
+    <h5>Skriv en rapport där du beskriver varje metod med ett exempel.
+        OBS! Skapa dina egna exempel och kopiera inte källkod från W3Schools.</h5>
+
+    <script src="script-uppgift1.js"></script>
+</body>
+
+</html>
