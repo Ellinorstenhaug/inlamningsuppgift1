@@ -119,10 +119,12 @@ JavaScript 1 – Inlämningsuppgift 1
         rad. Ex:
         <br>
         let x = 0; x++
-        <br> Dock lägger JavaScriptmotorn in semikolon vid exempelvis radbrytningar, vilket gör att följande kod
-        fungerar utan semikolon:
+        <br> Dock lägger JavaScriptmotorn in semikolon vid exempelvis radbrytningar, vilket gör att följande kod fungerar utan semikolon:
         <br>let x = 0
         <br> x++
+    </p>
+    <p>
+        Även fast semikolon inte är obligatoriskt att använda överallt (förutom på vissa platser) är det ansett att vara best practise att ändå använda semikolon för att separera varje kommando. Största argumentet för detta är att själv ha kontroll över vart dessa sätts, för att säkerställa att JavaScript-motorn inte infogar dessa på felaktiga platser som kan resultera i att koden beter sig annorlunda/felaktigt.
     </p>
     <h3>9. Vad är aritmetiska operatorer och hur kan de användas tillsammans med variabler?</h3>
 
@@ -183,6 +185,10 @@ JavaScript 1 – Inlämningsuppgift 1
     <span id="copyIndex"></span>
 
     <li>fill()</li>
+    <p>Metoden fill() ersätter alla platser i arrayen med ett statiskt värde, i detta fall "Euphorbia pulcherrima" vilket är det latinska namnet för Julstjärna. OBS! Ändrar ursprungsvärdet för hela arrayen!
+        <br>Den ursprungliga listan är: vallmo,prästkrage,lavendel,dahlia</p>
+    </p>
+    Listan med fill()<p id="fillStaticValue"></p>
 
     <li>from()</li>
     <p>Metoden from() gör motsatsen till toString(). Den tar en string och gör om den till en Array.</p>
@@ -190,14 +196,10 @@ JavaScript 1 – Inlämningsuppgift 1
     <span id="createArrayTrue"></span>
 
     <li>includes()</li>
-    <span id="includeElements"></span>
-
-
     <p>Med hjälp av metoden includes() kan man kontrollera ifall en array innehåller ett visst element eller inte. Innehåller arrayen elementet returneras true, om ej returneras false.</p>
     <p>Ursprunglig array:vallmo,prästkrage,lavendel,dahlia</p>
 
-    <p>Arrayen innehåller dahlia:<span id="includedElement"></span></p>    
-
+    <p>Arrayen innehåller dahlia:<span id="includedElement"></span></p>
 
     <li>indexOf()</li>
     <p>Metoden indexOf() söker igenom arrayen efter elementet man söker och retunerar indexet som den ligger på. Listan: (vallmo,prästkrage,lavendel,dahlia), Metoden: indexOf("vallmo");</p>
@@ -205,11 +207,16 @@ JavaScript 1 – Inlämningsuppgift 1
     
     
     <li>lastIndexOf()</li>
+    <p>Denna metod är snarlik indexOf()metoden, den söker alltså efter ett element och returnerar dens index, men skiljer sig då att den börjar i slutet av arrayen, alternativt vid satt startposition och går baklänges. Återkommer elementet flera gånger returnerar metoden den sista positionen (den längst bak). </p>
+    <p>Dahlia ligger på plats:<span id="returnLastIndex"></span></p>
+
     <li>pop()</li>
     <p>Metoden pop() tar bort det sista elementet i listan och retunerar det borttagna elementet. Listan: ("vallmo", "dahlia", "lavendel", "prästkrage")</p>
     <span id="getRidEnd"></span>
 
     <li>push()</li>
+    <p>Push() lägger till element längst bak i arrayen, och returnerar den nya arrayens längd.</p>
+    <span id="addElementLast"></span>
     <li>shift()</li>
     <p>Metoden shift() tar också bort element, men den tar bort det första element i listan. Listan: ("vallmo", "dahlia", "lavendel", "prästkrage")</p>
     <span id="getRidStart"></span>
@@ -221,15 +228,14 @@ JavaScript 1 – Inlämningsuppgift 1
 
 
     <li>slice()</li>
-    <li>valueOf()</li> 
-    <p>Metoden valueOf() konverterar arrayen, som är ett objekt, till en primitiv datatyp. I Javascript finns redan den här funktionen automatiskt, den åberopar den rätta datatypen själv där den efterfrågas.
-
-    Man kan ju tycka att valueOf() inte behövs då man har gått igenom ett antal artiklar om detta ämne. Handlar det mer om att ha kontrollen så som i användandet av semikolon? Att man själv kontrollerar vart semikolonen ska vara istället för att Javascript själv sätter ut dem?
-    <br><a href="https://medium.com/@kevincennis/object-object-things-you-didn-t-know-about-valueof-38f2a88dfb33" target="_blank">Länk</a>
+    <p>Slice() kopierar elementen inom den indexering man angivit, och returnerar de valda elementen i en ny array. Den ursprungliga arrayen kommer inte bli förändrad. </p>
+    <p>Exempel: Från den urpsungliga arrayen, slicea mellan 2 & 4:
+    <br>Den urpsungliga arrayen är: "vallmo", "dahlia", "lavendel", "prästkrage". 
+    <br>Det som sliceats ut från arrayen är: <span id="slicedElements"></span>
     </p>
-    <span id="addBeginning"></span>
-    
-    retunerar en primitiv datatyp
+
+
+    <li>valueOf()</li> retunerar en primitiv datatyp
     <h5>Skriv en rapport där du beskriver varje metod med ett exempel.
         OBS! Skapa dina egna exempel och kopiera inte källkod från W3Schools.</h5>
 

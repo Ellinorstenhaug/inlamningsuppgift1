@@ -62,3 +62,18 @@ document.getElementById("getRidStart").innerHTML = lista.shift();
 
 //Testar unshift()
 document.getElementById("addBeginning").innerHTML = originalLista.unshift("julstjärna", "novemberkaktus");
+//Testar fill()
+let latin = document.getElementById("fillStaticValue").innerHTML = lista.fill("Euphorbia pulcherrima");
+
+//Testar includes()
+document.getElementById("includedElement").innerHTML = originalLista.includes("vallmo", 0);
+
+//Testar lastIndexOf()
+document.getElementById("returnLastIndex").innerHTML = originalLista.lastIndexOf("dahlia");
+
+//Testar push()
+document.getElementById("addElementLast").innerHTML = originalLista.push("Julstjärna", "Novemberkaktus");
+console.log(originalLista);
+
+//Testar slice()
+document.getElementById("slicedElements").innerHTML = originalLista.slice(2, 4);
