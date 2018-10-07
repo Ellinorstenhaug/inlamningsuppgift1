@@ -40,8 +40,26 @@ document.getElementById("toStringNoAdd2").innerHTML = typeof(osorterad.toString(
 // Testar copyWithin()
 document.getElementById("copyIndex").innerHTML = lista.copyWithin(2, 0);
 
+// Testar from(). Den tar en sträng och omvandlar den till en array, motsatsen till toString()
+let myArray = Array.from("makeArrayPlease");
+document.getElementById("createArray").innerHTML = myArray;
+document.getElementById("createArrayTrue").innerHTML = Array.isArray(myArray);
+
+// Testar indexOf()
+document.getElementById("returnIndex").innerHTML = lista.indexOf("vallmo");
+
+// Testar pop()
+document.getElementById("getRidEnd").innerHTML = lista.pop();
+
+//Testar shift()
+document.getElementById("getRidStart").innerHTML = lista.shift();
+
+//Testar unshift()
+document.getElementById("addBeginning").innerHTML = originalLista.unshift("julstjärna", "novemberkaktus");
+
 //Testar fill()
-let latin = document.getElementById("fillStaticValue").innerHTML = lista.fill("Euphorbia pulcherrima");
+let latin = lista.fill("Euphorbia pulcherrima");
+document.getElementById("fillStaticValue").innerHTML = latin;
 
 //Testar includes()
 document.getElementById("includedElement").innerHTML = originalLista.includes("vallmo", 0);
