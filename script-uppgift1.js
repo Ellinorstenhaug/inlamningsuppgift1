@@ -4,10 +4,10 @@ x = 4; // Assign
 console.log(x);
 
 // Originallista
-let originalLista = ["vallmo", "dahlia", "lavendel", "prästkrage"];
+let originalLista = ["Vallmo", "Dahlia", "Lavendel", "Prästkrage"];
 
 // Testar isArray. 
-let lista = ["vallmo", "dahlia", "lavendel", "prästkrage"];
+let lista = ["Vallmo", "Dahlia", "Lavendel", "Prästkrage"];
 let el = document.getElementById("isThisArray");
 el.innerHTML = Array.isArray(lista); //Sparar värdet av innerHTML i variabeln lista
 
@@ -31,11 +31,11 @@ document.getElementById("reverseList").innerHTML = lista.sort().reverse();
 document.getElementById("konkatineraArrayer").innerHTML = lista.concat(osorterad);
 
 //Testar join(), sätter ihop allt i en lista till en och samma sträng med tillägg.
-document.getElementById("joinaToString").innerHTML = osorterad.join(" 😎 ")
+document.getElementById("joinaToString").innerHTML = osorterad.join(" 😎 ");
 
 // Testar toString(), sätter ihop en lista till en sträng utan tillägg, endast ett kommatecken.
-document.getElementById("toStringNoAdd").innerHTML = osorterad.toString()
-document.getElementById("toStringNoAdd2").innerHTML = typeof(osorterad.toString())
+document.getElementById("toStringNoAdd").innerHTML = osorterad.toString();
+document.getElementById("toStringNoAdd2").innerHTML = typeof(osorterad.toString());
 
 // Testar copyWithin()
 document.getElementById("copyIndex").innerHTML = lista.copyWithin(2, 0);
@@ -54,22 +54,22 @@ document.getElementById("getRidEnd").innerHTML = lista.pop();
 //Testar shift()
 document.getElementById("getRidStart").innerHTML = lista.shift();
 
-//Testar unshift()
-document.getElementById("addBeginning").innerHTML = originalLista.unshift("julstjärna", "novemberkaktus");
-
-//Testar fill()
-let latin = lista.fill("Euphorbia pulcherrima");
-document.getElementById("fillStaticValue").innerHTML = latin;
-
 //Testar includes()
 document.getElementById("includedElement").innerHTML = originalLista.includes("vallmo", 0);
 
 //Testar lastIndexOf()
 document.getElementById("returnLastIndex").innerHTML = originalLista.lastIndexOf("dahlia");
 
-//Testar push()
+//Testar push() //Returnerar 8 eftersom vi gjort unshift tidigare
 document.getElementById("addElementLast").innerHTML = originalLista.push("Julstjärna", "Novemberkaktus");
 console.log(originalLista);
 
+//Testar unshift()
+document.getElementById("addBeginning").innerHTML = originalLista.unshift("Blåklocka", "Liljekonvalj");
+
 //Testar slice()
 document.getElementById("slicedElements").innerHTML = originalLista.slice(2, 4);
+
+//Testar fill()
+// let latin = lista.fill("Euphorbia pulcherrima");
+document.getElementById("fillStaticValue").innerHTML = lista.fill("Euphorbia pulcherrima");
