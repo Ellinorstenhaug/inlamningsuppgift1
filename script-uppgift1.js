@@ -73,3 +73,10 @@ document.getElementById("slicedElements").innerHTML = originalLista.slice(2, 4);
 //Testar fill()
 // let latin = lista.fill("Euphorbia pulcherrima");
 document.getElementById("fillStaticValue").innerHTML = lista.fill("Euphorbia pulcherrima");
+
+//Testar valueOf
+document.getElementById("value").innerHTML = originalLista.valueOf();
+let nummerLista = [1,2,3,4,5,6,7,8,9];
+document.getElementById("nummerValue").innerHTML = nummerLista.valueOf();
+
+
